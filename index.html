@@ -59,7 +59,7 @@ body, html {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #FFFFFF;
   min-width: 160px;
   z-index: 1;
 }
@@ -70,26 +70,49 @@ body, html {
   text-decoration: none;
   display: block;
 }
-  
+
+.dropdown-content a:hover {background-color: #FFB6C1;}
+.dropdown:hover .dropdown-content {display: block;}
+
 </style>
 </head>
 <body>
 
-<!-- Links (sit on top) -->
+
 <div class="w3-top">
   <div class="w3-row w3-padding w3-pink">
     <div class="w3-col s3">
-      <a href="#" class="wombs-button w3-block w3-pink">HOME</a>
+      <a href="#" class="wombs-button w3-block w3-pink">HOME</a>  
     </div>
     <div class="w3-col s3">
-      <a href="#for-educators" class="wombs-button w3-block w3-pink">FOR EDUCATORS</a>
+    
+    <div class="dropdown">
+  			<button class="wombs-button w3-block w3-pink">FOR EDUCATORS</button>
+  			<div class="dropdown-content">
+    			<a href="#for-educators">MINI GAMES</a>
+    			<a href="#for-educators">VIDEOS</a>
+    			<a href="#for-educators">WORKSHEETS</a>
+  			</div>
+		</div>  
     </div>
-    <div class="w3-col s3">
-      <a href="#learn" class="wombs-button w3-block w3-pink">LEARN</a>
+    
+    <div class="dropdown">
+  			<button class="wombs-button w3-block w3-pink">LEARN</button>
+  			<div class="dropdown-content">
+    			<a href="#learn">ABORTION</a>
+    			<a href="#learn">BIRTH CONTROL</a>
+    			<a href="#learn">DISEASES</a>
+                <a href="#learn">MENSTRUATION</a>
+                <a href="#learn">MENTAL HEALTH</a>
+                <a href="#learn">TRANS HEALTH</a>
+  			</div>
+		</div>  
     </div>
+    
     <div class="w3-col s3">
       <a href="#interaction-checker" class="wombs-button w3-block w3-pink">INTERACTION CHECKER</a>
     </div>
+    
   </div>
 </div>
 
