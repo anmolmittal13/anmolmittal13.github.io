@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Women's Organization for Medical and Bodily Support</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.wombs-pink {
+  color: #FF366A
+}
+
+.wombs-purple {
+  color: #8255E5
+}
+  
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-color: #FFF0EA;
+  min-height: 100%;
+}
+
+.menu {
+  display: none;
+}
+  
+.wombs-button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  transition: 0.3
+}
+  
+.wombs-button:hover {
+  color:#000000!important;
+  background-color:#FFFFFF!important
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #FFB6C1;}
+.dropdown:hover .dropdown-content {display: block;}
+
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-pink">
+    <div class="w3-col s3">
+      <a href="#" class="wombs-button w3-block w3-pink">HOME</a>  
+    </div>
+    
+    <div class="w3-col s3">
+    <div class="dropdown">
+  	<button class="wombs-button w3-block w3-pink">FOR EDUCATORS</button>
+  	<div class="dropdown-content">
+    		<a href="#videos">VIDEOS</a>
+    		<a href="#worksheets">WORKSHEETS</a>
+                <a href="#mini-games">MINI GAMES</a>
+  	</div>
+    </div>  
+    </div>
+    
+    <div class="w3-col s3">
+    <div class="dropdown">
+  	<button class="wombs-button w3-block w3-pink">LEARN</button>
+  	<div class="dropdown-content">
+    		<a href="#learn">ABORTION</a>
+    		<a href="#learn">BIRTH CONTROL</a>
+    		<a href="#learn">DISEASES</a>
+                <a href="#learn">MENSTRUATION</a>
+                <a href="#learn">MENTAL HEALTH</a>
+                <a href="#learn">TRANS HEALTH</a>
+  	</div>
+    </div>  
+    </div>
+    
+    <div class="w3-col s3">
+      <a href="#interaction-checker" class="wombs-button w3-block w3-pink">INTERACTION CHECKER</a>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- For Educators - Videos Container -->
+<div class="w3-container" id="videos">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VIDEOS</span></h5>
+    <p>Informational videos to use for educational purposes.</p>
+    <iframe width="100%" height="315"
+	src="https://www.youtube.com/embed/KqhKa7CTpdk">
+    </iframe>
+    <p></p>
+    <a href="https://youtu.be/KqhKa7CTpdk">Gynecologist reveals everything you need to know about your first appointment.</a>
+  </div>
+</div>
+
+<!-- For Educators - Worksheets Container -->
+<div class="w3-container" id="worksheets">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">WORKSHEETS</span></h5>
+    <p>Female Reproductive System</p>
+    <iframe width="100%" height="500"
+	    src="https://www.liveworksheets.com/cc1469213np">
+    </iframe>
+  </div>
+</div>
+	
+<!-- For Educators - Mini Games -->
+<div class="w3-container" id="mini-games">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MINI GAMES</span></h5>
+    <p><strong>Birth Control Mechanisms</strong></p>
+    <p><strong>Word Bank:</strong></p>
+    <p>Abstinence | Breastfeeding | Diaphragm | Implant | IUD | Patch</p> <p>| Pill | Withdrawal</p>
+    <iframe width="100%" height="650" style="
+    	background-color:white; 
+        padding:5px 0 0 5px; 
+        border:3px solid black; 
+        margin:auto; 
+        display:block" frameborder="0" src="https://crosswordlabs.com/embed/birth-control-mechanisms">
+    </iframe>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
