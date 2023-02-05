@@ -24,7 +24,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-color: #FFF0EA;
-  min-height: 75%;
+  min-height: 100%;
 }
 
 .menu {
@@ -43,6 +43,7 @@ body, html {
   text-align:center;
   cursor:pointer;
   white-space:nowrap;
+  transition: 0.3
 }
   
 .wombs-button:hover {
@@ -50,6 +51,25 @@ body, html {
   background-color:#FFFFFF!important
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
   
 </style>
 </head>
@@ -75,9 +95,6 @@ body, html {
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
-  </div>
   <div class="w3-display-middle w3-center">
     <span class="wombs-pink" style="font-size:90px">WOMBS<br></span>
     <span class="wombs-pink" style="font-size:20px">W<span class="wombs-purple" style="font-size:20px">omen's 
@@ -85,9 +102,6 @@ body, html {
         <span class="wombs-pink" style="font-size:20px">M<span class="wombs-purple" style="font-size:20px">edical and 
           <span class="wombs-pink" style="font-size:20px">B<span class="wombs-purple" style="font-size:20px">odily 
             <span class="wombs-pink" style="font-size:20px">S<span class="wombs-purple" style="font-size:20px">upport</span></span></span></span></span></span></span></span></span></span>
-  </div>
-  <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">15 Adr street, 5015</span>
   </div>
 </header>
 
